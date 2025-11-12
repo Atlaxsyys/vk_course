@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2c92688a174767902f578177f2905eddd5e43702
 #pragma once
 
 #include <iostream>
@@ -5,10 +9,23 @@
 template<typename T>
 class my_forward_list {
 private:
+<<<<<<< HEAD
     struct Node {
         T data;
         Node* next;
         Node(const T& value) : data(value), next(nullptr) {}
+=======
+    class Node {
+    private:
+        T data;
+        Node* next;
+    public:
+        Node(const T& value) : data(value), next(nullptr) {}
+        
+        T get_data() const { return data; }
+        Node* get_next() const { return next; }
+        void set_next(Node* next_node) { next = next_node; }
+>>>>>>> 2c92688a174767902f578177f2905eddd5e43702
     };
 
     Node* head;
@@ -27,7 +44,11 @@ public:
         while(head)
         {
             Node* temp = head;
+<<<<<<< HEAD
             head = head->next;
+=======
+            head = head->get_next();
+>>>>>>> 2c92688a174767902f578177f2905eddd5e43702
             delete temp;
         }
 
@@ -37,7 +58,11 @@ public:
     void push_front(const T& value)
     {
         Node* new_node = new Node(value);
+<<<<<<< HEAD
         new_node->next = head;
+=======
+        new_node->set_next(head);
+>>>>>>> 2c92688a174767902f578177f2905eddd5e43702
         head = new_node;
         list_size++;
     }
@@ -56,9 +81,15 @@ public:
         {
             Node* current = head;
 
+<<<<<<< HEAD
             while (current->next) { current = current->next; }
 
             current->next = new_node;
+=======
+            while (current->get_next()) { current = current->get_next(); }
+
+            current->set_next(new_node);
+>>>>>>> 2c92688a174767902f578177f2905eddd5e43702
             list_size++;
         }
 
@@ -72,6 +103,7 @@ public:
 
     void set_head(Node* new_head) { head = new_head; }
 
+<<<<<<< HEAD
     T get_data(Node* current) { return current->data; }
 
     void remove(const T& value)
@@ -102,6 +134,13 @@ public:
         head = dummy->next;
         delete dummy;
     }
+=======
+    T get_data(Node* current) { return current->get_data(); }
+
+    void decrement_size() { if (list_size > 0) list_size--; }
+
+    Node* create_node(const T& value) const { return new Node(value); }
+>>>>>>> 2c92688a174767902f578177f2905eddd5e43702
 
     void print() const
     {
@@ -115,6 +154,7 @@ public:
 
         while (current)
         {
+<<<<<<< HEAD
             std::cout << current->data;
 
             if (current->next)
@@ -163,4 +203,15 @@ public:
     
 //     last_node->next = cycle_node;
 // }
+=======
+            std::cout << current->get_data();
+
+            if (current->get_next()) { std::cout << " -> "; }
+
+            current = current->get_next();
+        }
+
+        std::cout << std::endl;
+    }
+>>>>>>> 2c92688a174767902f578177f2905eddd5e43702
 };
