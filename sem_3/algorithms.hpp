@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <unordered_map>
 #include <string>
+#include <iostream>
 
 // 1
 long long binarySearchSqrt (long long target)
