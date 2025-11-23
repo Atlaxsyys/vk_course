@@ -76,6 +76,7 @@ public:
         typename BinaryTree<T>::Node* root = buildTreeRecursive(tree, array, 0);
         tree.setRoot(root);
     }
+
     // 2 BFS
     template <typename T>
     static bool isSymmetric(const BinaryTree<T>& tree)
@@ -106,6 +107,7 @@ public:
         
         return true;
     }
+    
     // 2 DFS
     template <typename T>
     static bool isSymmetricDFS(const BinaryTree<T>& tree)
@@ -129,7 +131,7 @@ public:
         
         return true;
     }
-    
+
     // 3
     template <typename T>
     static int minDepth(const BinaryTree<T>& tree)

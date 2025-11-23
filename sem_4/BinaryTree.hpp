@@ -15,12 +15,10 @@ private:
     public:
         Node(T value) : data(value), left(nullptr), right(nullptr) {}
         
-        // Публичные методы доступа к приватным полям
         T getData() const { return data; }
         Node* getLeft() const { return left; }
         Node* getRight() const { return right; }
         
-        // Методы для установки значений (только для алгоритмов)
         void setLeft(Node* node) { left = node; }
         void setRight(Node* node) { right = node; }
         void setData(T value) { data = value; }
@@ -77,7 +75,6 @@ public:
         clear(root);
     }
 
-    // Публичные методы для работы с деревом
     Node* createNode(T value) const { return new Node(value); }
     Node* getRoot() const { return root; }
     void setRoot(Node* newRoot) { root = newRoot; }
@@ -119,7 +116,8 @@ public:
         if (result == 0) 
         {
             std::cout << "PNG file has been created: " << pngFilename << std::endl;
-        } else
+        }
+        else
         {
             std::cout << "PNG file creation error" << std::endl;
         }
