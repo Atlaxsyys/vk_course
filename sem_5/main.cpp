@@ -63,6 +63,8 @@ int main()
     
     std::cout << "   3rd smallest (iterative): " 
               << TreeAlgorithms::inorderMinIterative<int>(bst, 3) << std::endl;
+    std::cout << "   3rd smallest (recursive): " 
+              << TreeAlgorithms::inorderMin<int>(bst, 3) << std::endl;
     std::cout << "   5th smallest (iterative): " 
               << TreeAlgorithms::inorderMinIterative<int>(bst, 5) << std::endl;
     std::cout << "   Invalid k (10): " 

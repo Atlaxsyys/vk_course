@@ -263,11 +263,13 @@ class TreeAlgorithms {
         if (node == nullptr) { return -1; }
         
         T leftResult = inorderMinHelper<T>(node->getLeft(), k, counter);
-        if (leftResult != -1) {
+        if (leftResult != -1)
+        {
             return leftResult;
         }
         
         counter++;
+
         if (counter == k)
         {
             return node->getData();
