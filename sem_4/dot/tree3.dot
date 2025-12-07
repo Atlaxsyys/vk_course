@@ -1,0 +1,33 @@
+digraph BinaryTree {
+    node [fontname="Arial", shape=circle, style=filled, fillcolor=lightblue];
+    edge [fontname="Arial", fontsize=10];
+    "0x63a899026b10" [label="1"];
+    "0x63a899026b10" -> "0x63a899026b30" [color=red];
+    "0x63a899026b30" [label="2"];
+    "0x63a899026b30" -> "0x63a899026d90" [color=red];
+    "0x63a899026d90" [label="3"];
+    "0x63a899026d90" -> "null0x63a899026d90L" [color=red];
+    "null0x63a899026d90L" [label="nullptr", shape=plaintext];
+    "0x63a899026d90" -> "null0x63a899026d90R" [color=blue];
+    "null0x63a899026d90R" [label="nullptr", shape=plaintext];
+    "0x63a899026b30" -> "0x63a899026db0" [color=blue];
+    "0x63a899026db0" [label="4"];
+    "0x63a899026db0" -> "null0x63a899026db0L" [color=red];
+    "null0x63a899026db0L" [label="nullptr", shape=plaintext];
+    "0x63a899026db0" -> "null0x63a899026db0R" [color=blue];
+    "null0x63a899026db0R" [label="nullptr", shape=plaintext];
+    "0x63a899026b10" -> "0x63a899026dd0" [color=blue];
+    "0x63a899026dd0" [label="2"];
+    "0x63a899026dd0" -> "0x63a899026df0" [color=red];
+    "0x63a899026df0" [label="5"];
+    "0x63a899026df0" -> "null0x63a899026df0L" [color=red];
+    "null0x63a899026df0L" [label="nullptr", shape=plaintext];
+    "0x63a899026df0" -> "null0x63a899026df0R" [color=blue];
+    "null0x63a899026df0R" [label="nullptr", shape=plaintext];
+    "0x63a899026dd0" -> "0x63a899026e10" [color=blue];
+    "0x63a899026e10" [label="3"];
+    "0x63a899026e10" -> "null0x63a899026e10L" [color=red];
+    "null0x63a899026e10L" [label="nullptr", shape=plaintext];
+    "0x63a899026e10" -> "null0x63a899026e10R" [color=blue];
+    "null0x63a899026e10R" [label="nullptr", shape=plaintext];
+}

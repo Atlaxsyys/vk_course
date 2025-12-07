@@ -1,0 +1,37 @@
+digraph BinaryTree {
+    node [fontname="Arial", shape=circle, style=filled, fillcolor=lightblue];
+    edge [fontname="Arial", fontsize=10];
+    "0x59459e6790e0" [label="8"];
+    "0x59459e6790e0" -> "0x59459e679100" [color=red];
+    "0x59459e679100" [label="9"];
+    "0x59459e679100" -> "0x59459e679120" [color=red];
+    "0x59459e679120" [label="7"];
+    "0x59459e679120" -> "0x59459e679140" [color=red];
+    "0x59459e679140" [label="4"];
+    "0x59459e679140" -> "null0x59459e679140L" [color=red];
+    "null0x59459e679140L" [label="nullptr", shape=plaintext];
+    "0x59459e679140" -> "null0x59459e679140R" [color=blue];
+    "null0x59459e679140R" [label="nullptr", shape=plaintext];
+    "0x59459e679120" -> "null0x59459e679120R" [color=blue];
+    "null0x59459e679120R" [label="nullptr", shape=plaintext];
+    "0x59459e679100" -> "0x59459e679160" [color=blue];
+    "0x59459e679160" [label="16"];
+    "0x59459e679160" -> "null0x59459e679160L" [color=red];
+    "null0x59459e679160L" [label="nullptr", shape=plaintext];
+    "0x59459e679160" -> "null0x59459e679160R" [color=blue];
+    "null0x59459e679160R" [label="nullptr", shape=plaintext];
+    "0x59459e6790e0" -> "0x59459e679180" [color=blue];
+    "0x59459e679180" [label="11"];
+    "0x59459e679180" -> "0x59459e6791a0" [color=red];
+    "0x59459e6791a0" [label="3"];
+    "0x59459e6791a0" -> "null0x59459e6791a0L" [color=red];
+    "null0x59459e6791a0L" [label="nullptr", shape=plaintext];
+    "0x59459e6791a0" -> "null0x59459e6791a0R" [color=blue];
+    "null0x59459e6791a0R" [label="nullptr", shape=plaintext];
+    "0x59459e679180" -> "0x59459e6791c0" [color=blue];
+    "0x59459e6791c0" [label="1"];
+    "0x59459e6791c0" -> "null0x59459e6791c0L" [color=red];
+    "null0x59459e6791c0L" [label="nullptr", shape=plaintext];
+    "0x59459e6791c0" -> "null0x59459e6791c0R" [color=blue];
+    "null0x59459e6791c0R" [label="nullptr", shape=plaintext];
+}

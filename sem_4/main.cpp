@@ -55,7 +55,14 @@ int main()
     std::cout << (TreeAlgorithms::isSameTree(tree5a, tree5c) ? "true" : "false") << std::endl;
 
     // 4
-    std::cout << TreeAlgorithms::minDepth(tree1) << std::endl;
+    std::vector<int> array4 = {8, 9, 11, 7, 16, 3, 1, 4};
+    BinaryTree<int> tree4;
+    TreeAlgorithms::buildFromArray(tree4, array4);
+
+    tree4.generateDOTfile("dot/tree4.dot");
+    tree4.generatePNGfile("dot/tree4.dot", "img/tree4.png");
+
+    std::cout << TreeAlgorithms::minDepth(tree4) << std::endl;
 
     // 5
     std::cout << TreeAlgorithms::maxMinMultiplication(array1) << std::endl;
